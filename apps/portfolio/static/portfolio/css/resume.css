@@ -1,0 +1,17 @@
+body {
+	background-color: #cbcbcb;
+	text-align: center;
+}
+h1{
+/*	margin:0;*/
+	font-family: Times, Serif;
+	font-size: 80px;
+	color: #cbcbcb;
+}
+.wrapper{
+	height: 500px;
+	width: auto;
+	background-size: 100%;
+	background-color: #111111;
+
+}

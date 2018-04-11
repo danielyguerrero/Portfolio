@@ -1,0 +1,64 @@
+body {
+	background-color: #cbcbcb;
+	text-align: center;
+}
+h1{
+/*	margin:0;*/
+	font: italic 2em/1em "Times New Roman", "MS Serif", "New York", serif;
+	font-size: 70px;
+	color: #cbcbcb;
+}
+
+.wrapper{
+	height: auto;
+	width: auto;
+	background-size: 100%;
+	background: linear-gradient(#111111, #cbcbcb);
+
+}
+.project1{
+	height: 450px;
+	width: 445px;
+	display: inline-block;
+	background-color: #cbcbcb;
+	margin:10px;
+	padding: 15px 5px 5px 5px;
+}
+.project2{
+	height: 450px;
+	width: 445px;
+	display: inline-block;
+	background-color: #cbcbcb;
+	margin:10px;
+	padding: 15px 5px 5px 5px;
+	vertical-align: top;
+}
+.project3{
+	height: 450px;
+	width: 445px;
+	display: inline-block;
+	background-color: #cbcbcb;
+	margin:10px;
+	padding: 15px 5px 5px 5px;
+}
+.project4{
+	height: 450px;
+	width: 445px;
+	display: inline-block;
+	background-color: #cbcbcb;
+	margin:10px;
+	padding: 15px 5px 5px 5px;
+}
+.project5{
+	height: 450px;
+	width: 445px;
+	display: inline-block;
+	background-color: #cbcbcb;
+	margin:10px;
+	padding: 15px 5px 5px 5px;
+}
+.par{
+	color: #cbcbcb;
+	height: auto;
+	width: auto;
+}

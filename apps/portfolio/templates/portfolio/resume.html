@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Resume</title>
+	{% load staticfiles %}
+     <!-- Bootstrap -->
+          <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{% static 'portfolio/css/resume.css' %}" charset="utf-8"  />
+</head>
+<body>
+<!-- ===============    NAVBAR    ===================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'home' %}">Daniel Y. Guerrero</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://docs.google.com/document/d/1wPR1JgrkzH_GM93WNpqrO_DDg1V40-8Qn59sXaP51fU/edit?usp=sharing">Resume</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- ===============   WRAPPER    ======================= -->
+<div class="wrapper">
+	<h1 >My resume</h1>
+	<br>
+	 My Resume goes here 
+	
+</div>
+<!-- ===============   WRAPPER  ENDS   ======================= -->
+<h2> This is my resume </h2>
+
+</body>
+</html>
