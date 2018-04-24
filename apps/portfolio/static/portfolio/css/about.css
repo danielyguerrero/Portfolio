@@ -4,39 +4,146 @@ body {
 h1{
 	/*font-family: Times, Serif;*/
 	font: italic 2em/1em "Times New Roman", "MS Serif", "New York", serif;
-	font-size: 80px;
+	font-size: 70px;
 	color: #cbcbcb;
 	margin-bottom: 30px;
 }
 .wrapper{
 	height: auto;
 	width: auto;
-	background-size: 100%;
 	background: linear-gradient(#111111, #616161);
 	color: #cbcbcb;
 }
 .armydiv{
-	height: 450px;
-	width: 450px;
+	width: 100%;
+    height: 100%;
+	max-height: 450px;
+	max-width: 450px;
 	display: inline-block;
 	margin:10px;
+	padding: 10px;
 }
 .uopdiv{
-	height: 450px;
-	width: 450px;
+	width: 100%;
+    height: 100%;
+	max-height: 450px;
+	max-width: 450px;
 	display: inline-block;
 	vertical-align: top;
 	margin:10px;
+	padding: 10px;
 }
 .dojodiv{
-	height: 450px;
-	width: 599px;
+	width: 100%;
+  height: 100%;
+	max-height: 450px;
+	max-width: 599px;
 	display: inline-block;
 	margin:10px;
 	text-align: center;
+	padding: 10px;
+  margin-bottom: 40px;
 }
 
 img {
 	box-shadow: 0 0 8px 8px #534e4e;
 	margin-bottom: 20px;
 }
+#armypic {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+#uoppic {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    max-height: 200px;
+}
+#dojopic {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 200px;
+}
+
+/*=======================================================================================*/
+/* ================================         NAVBAR         ==============================*/
+/*=======================================================================================*/
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+ /* Add a black background color to the top navigation */
+/*.topnav {
+    background-color: #333;
+    overflow: hidden;
+}*/
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+/*=======================================================================================*/
+/* ================================        END NAVBAR      ==============================*/
+/*=======================================================================================*/
