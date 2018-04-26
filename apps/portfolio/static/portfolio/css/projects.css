@@ -16,6 +16,11 @@ h1{
 	background: linear-gradient(#111111, #cbcbcb);
 
 }
+.title{
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 .project1{
 	height: auto;
 	width: 100%;
@@ -79,26 +84,11 @@ h1{
 /*=======================================================================================*/
 /* ================================         NAVBAR         ==============================*/
 /*=======================================================================================*/
-.navbar-collapse.collapse {
-  display: block!important;
-}
-
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
-}
-
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
-}
-
-.navbar-right {
-  float: right!important;
-}
  /* Add a black background color to the top navigation */
-/*.topnav {
+.topnav {
     background-color: #333;
     overflow: hidden;
-}*/
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -119,7 +109,7 @@ h1{
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: #4CAF50;
+    background-color: #6F86CD;
     color: white;
 }
 
@@ -127,7 +117,6 @@ h1{
 .topnav .icon {
     display: none;
 } 
-
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -151,7 +140,4 @@ h1{
     text-align: left;
   }
 } 
-
-/*=======================================================================================*/
-/* ================================        END NAVBAR      ==============================*/
-/*=======================================================================================*/
+/*==================================================================================*/

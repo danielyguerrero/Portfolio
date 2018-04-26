@@ -7,16 +7,15 @@ function myFunction() {
     }
 } 
 
-
 $(document).ready(function(){
 
-	$('img').hover(
+	$('div').hover(
 
 		function() {
-			$(this).css({"box-shadow":"0px 0px 26px 4px white"});
+			$(this).css({"box-shadow":"0px 0px 10px 2px white"});
 		},
 		function() {
-			$(this).css({"box-shadow": "0px 0px 0px black"});
+			$(this).css({"box-shadow": "0px 0px 26px 2px #988c8c"});
 		}
 
 

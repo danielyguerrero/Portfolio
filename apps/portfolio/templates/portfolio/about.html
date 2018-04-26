@@ -2,43 +2,33 @@
 <html>
 <head>
 	<title>About Me</title>
-	     {% load staticfiles %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+     {% load staticfiles %}
      <!-- Bootstrap -->
-          <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <!-- CSS Link -->
     <link rel="stylesheet" href="{% static 'portfolio/css/about.css' %}" charset="utf-8"  />
+    <!-- jQuery Link -->
+    <script src="{% static "portfolio/js/about.js" %}"></script>
 </head>
 <body>
+
 <!-- ===============    NAVBAR    ===================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{% url 'home' %}">Daniel Y. Guerrero</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link topnav" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'about' %}">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://docs.google.com/document/d/1wPR1JgrkzH_GM93WNpqrO_DDg1V40-8Qn59sXaP51fU/edit?usp=sharing" target="_blank">Resume</a>
-      </li>
-    </ul>
+   <div class="topnav" id="myTopnav">
+    <a href="{% url 'home' %}" class="active">Portfolio</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'projects' %}">Projects</a>
+    <a class="nav-link" href="https://docs.google.com/document/d/1wPR1JgrkzH_GM93WNpqrO_DDg1V40-8Qn59sXaP51fU/edit?usp=sharing" target="_blank">Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-</nav>
+
 <!-- ===============   WRAPPER    ======================= -->
 <div class="wrapper">
 	<h1 >A bit about myself</h1>
@@ -46,30 +36,64 @@
 <!-- ===============   ARMY DIV    ======================= -->
   <div class="armydiv">
     <img src="static/portfolio/img/army.png" id="armypic"  / >
-    <p>I enlisted in the military back in 2005, my first duty
-    station was located in Germany. Deployed twice to Baghdad, Iraq and was awarded 
-    multiple medals</p>
+    <p class="description">
+      Enlisted in the military 2005, my station was located in Schweinfurt, Germany. I deployed to Baghdad, Iraq two times. <br><br>
+      As a result of my military experience, I developed: <br>
+      <span class="results">
+      * Strong teamwork skills <br>
+      * Problem solving skills <br>
+      * Communication skills<br>
+      * Ability to think and adapt under pressure<br>
+      </span>
+      <span class="awarded">
+      Was awarded multiple awards and medals:<br>
+        -> Iraq Compaign Medal w/ 2 Campaign Stars<br>
+        -> Army Commendation Medal<br>
+        -> Army Achievement Medal<br>
+        -> Meritorious Unit Commendation<br>
+        -> Army Good Conduct Medal (2x)<br>
+      </span>
+    </p>
+      
   </div>
 
 <!-- ===============   UOP DIV    ======================= -->
   <div class="uopdiv">
-    <img src="static/portfolio/img/uop.jpg" id="uoppic"  / >
 
-    <p>I enrolled into the University of Phoenix right after 
-      my military service in 2012 and received my Bachelor's of Science in Information 
-      Technology in 2017.</p>
+    <p class="description">
+      I enrolled into the University of Phoenix right after my military service in 2012 in the <span class="results">Bachelor's of Science in Information Technology (BSIT)</span> program and graduated 2017. <br>
+      * It provided me the <span class="results">knowledge to successfully apply information technology theory and principles to address real world business opportunities and challenges. </span><br>
+      * I went through fundamental and advanced knowledge in core technologies such as systems integration, network and cloud infrastructure,<span class="results"> database design and integration, programming and other supporting IT principles.</span> <br>
+      * The program provides the opportunity to specialize through the selection of coursework and/or University of Phoenix certificates, aligned to industry certifications, to support IT career goals. 
+    </p>
+
+    <img src="static/portfolio/img/uop1.jpg" id="uoppic"  / >
+
   </div>
 
 <!-- ===============   DOJO DIV    ======================= -->
   <div class="dojodiv">
-    <img src="static/portfolio/img/dojo.png" id="dojopic"  / >
+    <img src="static/portfolio/img/dojo1.png" id="dojopic"  / >
 
-    <p>In 2017 I enrolled into Coding Dojo where I was taught 
-    full stack web development, I received my certifications Feb 2018.</p>
+    <p class="description">
+      I was a recent university graduate who just wanted to learn how to code in python. 
+      Coding Dojo made me fall in love completely with programming and the skills I learned have opened me up to opportunities that most university students are unable to participate in. <br>
+
+      Coding Dojo is not easy, it is very fast-pace and requires long days (like 12-16 hour days) and a lot of effort to learn everything. <br>
+
+      They also pracice <span class="results"> GAP LEARNING, intentionally leaving peaces of code out to force you to learn how to learn on your own (like you will in the real world).</span> <br>
+      I was told they don't just train you to become a programmer, they train you to be self-sufficient. <br>
+
+      I graduated Febuary 2018 and have learned three full stacks (Python, Ruby, and Mean), I also developed the <span class="results"> ability to self-learn new languages </span>, and made life-long friends.
+    </p>
     </div>
   </div>
 </div>
-
-<!-- ===============   WRAPPER  ENDS   ======================= -->
+<footer>
+  <a href="https://github.com/danielyguerrero" class="fa fa-github" target="_blank"></a>
+  <a href="https://twitter.com/danielyguerrero" class="fa fa-twitter" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/daniel-guerrero-10ab3912a/" class="fa fa-linkedin" target="_blank"></a>
+  <a href="https://plus.google.com/108764558393139818561" class="fa fa-google" target="_blank"></a>
+</footer>
 </body>
 </html>
