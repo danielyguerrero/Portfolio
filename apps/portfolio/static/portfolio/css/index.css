@@ -125,12 +125,12 @@ h2{
 }
 
 .fa {
+  width: 43px;
+  margin: 10px;
   padding: 14px;
   font-size: 20px;
-  width: 43px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 10px 23px 30px;
   border-radius: 10px;
 }
 .fa-linkedin {
