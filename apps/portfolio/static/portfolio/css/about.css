@@ -153,12 +153,12 @@ img {
 /*==================================================================================*/
 
 .fa {
+  width: 43px;
+  margin: 10px;
   padding: 14px;
   font-size: 20px;
-  width: 43px;
   text-align: center;
   text-decoration: none;
-  margin: 50px 75px 50px 75px;
   border-radius: 10px;
 }
 .fa-linkedin {
@@ -178,6 +178,8 @@ img {
   color: white;
 }
 footer{
+  height: auto;
+  width: auto;
   padding-top: 5px;
   background: linear-gradient(#5f5f5f, #111111);
 }
