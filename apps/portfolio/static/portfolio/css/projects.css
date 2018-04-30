@@ -1,5 +1,4 @@
 body {
-	background-color: #cbcbcb;
 	text-align: center;
 }
 h1{
@@ -169,6 +168,6 @@ h1{
 footer{
   height: auto;
   width: auto;
-  background: linear-gradient(#5f5f5f, #111111);
   padding-top: 27px;
+  background: linear-gradient(#5f5f5f, #111111);
 }
