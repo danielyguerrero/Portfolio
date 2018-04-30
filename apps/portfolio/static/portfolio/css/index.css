@@ -13,7 +13,57 @@ h1{
   background: linear-gradient(#111111, #616161);
   color: #cbcbcb;
 }
+#mypic{
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  margin: 45px;
+}
+.topdiv{
+	height: auto;
+	width: auto;
+	background-size: 100%;
+	background-color: #111111;
+  padding-bottom: 100px;
+}
+.ldiv{
+  height: auto;
+  width: auto;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rdiv{
+  height: auto;
+  width:  auto; 
+  max-width: 480px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
 
+.allfour {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  margin: 23px;
+  display: inline-block;
+}
+img {
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+h2{
+  font: italic bold 38px Georgia, serif;
+  margin-top: 10px;
+  text-shadow: 1px 1px #f8f9fa;
+  display: inline-block;
+}
 /*=======================================================================================*/
 /* ================================         NAVBAR         ==============================*/
 /*=======================================================================================*/
@@ -74,58 +124,6 @@ h1{
   }
 } 
 /*==================================================================================*/
-#mypic{
-  height: auto;
-  width: auto;
-  max-width: 300px;
-  margin: 45px;
-}
-.topdiv{
-	height: auto;
-	width: auto;
-	background-size: 100%;
-	background-color: #111111;
-  padding-bottom: 100px;
-}
-.ldiv{
-  height: auto;
-  width: auto;
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-}
-.rdiv{
-  height: auto;
-  width:  auto; 
-  max-width: 480px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px;
-}
-
-.allfour {
-  width: auto;
-  height: auto;
-  max-width: 120px;
-  margin: 23px;
-  display: inline-block;
-}
-img {
-  border-radius: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-
-h2{
-  font: italic bold 38px Georgia, serif;
-  margin-top: 10px;
-  text-shadow: 1px 1px #f8f9fa;
-  display: inline-block;
-}
-
 .fa {
   width: 43px;
   margin: 10px;
