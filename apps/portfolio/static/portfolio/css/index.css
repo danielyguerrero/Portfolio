@@ -156,6 +156,8 @@ h2{
   color: white;
 }
 footer{
-  padding-top: 125px;
+  height: auto;
+  width: auto;
+  padding-top: 27px;
   background: linear-gradient(#111111, #cbcbcb);
 }
