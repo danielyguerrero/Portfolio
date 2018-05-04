@@ -4,7 +4,7 @@
 	<title>About Me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
      {% load staticfiles %}
-     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Icon library -->
@@ -22,12 +22,15 @@
 
 <!-- ===============    NAVBAR    ===================== -->
    <div class="topnav" id="myTopnav">
+
     <a href="{% url 'home' %}" class="active">Portfolio</a>
     <a href="{% url 'about' %}">About</a>
     <a href="{% url 'projects' %}">Projects</a>
     <a class="nav-link" href="https://docs.google.com/document/d/1wPR1JgrkzH_GM93WNpqrO_DDg1V40-8Qn59sXaP51fU/edit?usp=sharing" target="_blank">Resume</a>
+
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+
+   </div>
 
 <!-- ===============   WRAPPER    ======================= -->
 <div class="wrapper">
